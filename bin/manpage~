@@ -1,0 +1,20 @@
+.\" Process this file with
+.\" groff -man -Tascii foo.1
+.\"
+.TH reverse-search 1 "DECEMBER 2014" Linux "User Manuals"
+.SH NAME
+reverse-search \- frobnicate the bar library
+.SH SYNOPSIS
+.B reverse-search [-h]
+.I <regex>
+.SH DESCRIPTION
+.B reverse-search
+Takes a regular expression as parameter and return a list of previously entered commands matching the pattern.
+.SH OPTIONS
+.IP -h
+Shows the "man" page.
+
+.RE
+.RS
+.SH AUTHOR
+Punit Gupta <punit at codebrahma dot com>

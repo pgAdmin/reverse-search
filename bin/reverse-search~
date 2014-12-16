@@ -2,7 +2,7 @@
 
 require 'reverse_search'
 if ARGV.empty?
-	puts "Usage: reverse-search [-h] <regex>"
+	puts "Usage: reverse-search <regex>"
 elsif ARGV[0] == "-h"
 	path = File.dirname(__FILE__)
 	system("man #{path}/manpage")
