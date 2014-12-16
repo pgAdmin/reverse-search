@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require 'reverse_search'
+if ARGV.empty?
+	puts "Usage: reverse_search <regex>"
+else
+	Reverse::Search.find(ARGV[0])
+end
