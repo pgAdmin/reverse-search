@@ -3,6 +3,8 @@
 require 'reverse_search'
 if ARGV.empty?
 	puts "Usage: reverse-search <regex>"
+elsif ARGV[0] = "-h"
+	puts "Usage: reverse-search <regex>"
 else
 	Reverse::Search.find(ARGV[0])
 end

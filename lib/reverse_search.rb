@@ -4,7 +4,7 @@ module Reverse
 			file = File.open("/home/"+ENV['USER']+"/.bash_history", "r")
 			all_lines = file.readlines
 			regexp = Regexp.new regxp
-			puts all_lines.select {|line| line =~ (regexp)}
+			puts all_lines.select {|line| line.gsub("\n", "") =~ (regexp)}
 		end
 	end
 end
